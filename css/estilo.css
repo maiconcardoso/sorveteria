@@ -1,0 +1,410 @@
+@charset="utf-8";
+
+/*RESET*/
+*{ margin:0; padding:0; font-size:100%; font-family:Arial, Helvetica, sans-serif; }
+ul{ list-style:none; }
+h1,h2,h3{ font-weight:normal; }
+a{ text-decoration:none; }
+
+
+/*CABEÇALHO*/
+header{
+	text-align:center;
+	background-color:white;
+}
+.titulo{
+	padding:15px;
+}
+.btn-menu{
+	padding:9px 25px;
+	background:#4e53a1;
+	border:1px solid white;
+	border-radius:5px;
+	font-size:1em;
+	color:white;
+	margin-bottom:22px;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+.btn-menu:hover{
+	color:#28080D;
+}
+
+
+/*MENU*/
+.menu{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-color:rgba(0,0,0,0.9);
+	top:0;
+	left:0;
+	text-align:center;
+}
+.btn-close{
+	float:right;
+	margin:10px;
+	margin-right:20px;
+	color:white;
+	cursor:pointer;
+	font-weight:900;
+	font-size:1.5em;
+}
+.btn-close:hover{
+	color:#F28B30;
+}
+.menu ul{
+	margin-top:100px;
+}
+.menu ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:6px;
+}
+.menu ul a{
+	padding:10px;
+	color:white;
+}
+.menu ul a:hover{
+	border:1px solid #F28B30;
+}
+
+/*BANNER*/
+.banner{
+	padding-bottom:2px;
+}
+.banner hr{
+	padding:2px;
+	margin-top:5px;
+	background:#28080D;
+	border:none;
+}
+.banner .imagem-banner{
+	width:100%;
+}
+.icone-picole{
+	background:url(../img/icon_sorvete.png) center  no-repeat;
+	width:40px;
+}
+
+/*PRODUTOS*/
+#produtos{
+	text-align:center;
+	padding-top:55px;
+
+}
+#produtos h2{
+	text-transform:uppercase;
+	font-size:1.8em;
+	font-weight:bold;
+	color:#4e53a1;
+	padding-bottom:10px;
+}
+#produtos .line-colors{
+	width:100%;
+}
+.imagens-produto {
+	margin-top:15px;
+	margin-bottom:30px;
+	border-radius:10px;
+	box-sizing: border-box;
+}
+
+.imagens-produto img:hover{
+	border:5px solid #33CCFF;
+}
+.imagens-produto img{
+	width:95%;
+	border-radius:10px;
+	border:5px solid white;
+	cursor:pointer;
+}
+.btn-produtos{
+	padding:15px 30px;
+	text-transform:uppercase;
+	border:none;
+	border-radius:10px;
+	background:#4e53a1;
+	color:white;
+	margin:10px 0 30px;
+	cursor:pointer;
+}
+.btn-produtos:hover{
+	background:#33CCFF;
+}
+
+/*HISTORIA*/
+
+#historia{
+	text-align:center;
+	background:#33CCFF;
+}
+#historia .line-colors{
+	width:100%;
+}
+#historia img{
+	padding-top:30px;
+	padding-bottom:10px;
+}
+#historia h2{
+	color:#4e53a1;
+	font-size:1.5em;
+	text-transform:uppercase;
+	padding-bottom:20px;
+}
+#historia p{
+	color:white;
+	line-height:25px;
+	padding:0 10px;
+	font-size:1.0em;
+	padding-bottom:20px;
+}
+.btn-historia{
+	margin-bottom:5px;
+}
+.btn-historia:hover{
+	background:#38080D;
+}
+.fundo-btn-historia{
+	background:white;
+	height:60px;
+}
+/*IMAGEM SORVETE*/
+.imagem-sorvete img{
+	margin-top:40px;
+	width:100%;
+	text-align:center;
+}
+
+/*ONDE ECONTRAR*/
+#onde-encontrar{
+	padding:10px;
+	text-align:center;
+}
+#onde-encontrar h2{
+	color:#4e53a1;
+	font-weight:bold;
+	font-size:1.5em;
+	text-transform:uppercase;
+	padding:20px;
+}
+#onde-encontrar p{
+	line-height:25px;
+	padding:5px 10px;
+	font-size:1.0em;
+	text-align:left;
+	color:gray;
+	font-weight:bold;
+}
+#onde-encontrar iframe{
+	width:100%;
+	border:none;
+}
+
+/*contato*/
+#contato{
+	text-align:center;
+	padding:10px;
+}
+#contato h2{
+	color:#4e53a1;
+	font-weight:bold;
+	font-size:1.5em;
+	text-transform:uppercase;
+	padding:20px;
+}
+#contato input, textarea{
+	display:block;
+	margin:10px auto;
+	width:90%;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,0.4);
+}
+#contato textarea{
+	padding-bottom:60px;
+}
+
+
+/*RODAPE*/
+
+.rodape{
+	text-align:center;
+	font-size:12px;
+	color:white;
+	background:#33CCFF;
+	border-top:3px solid #28080D;
+}
+.rodape p{
+	padding:40px 0 20px;
+}
+.rodape img{
+	padding-bottom:30px;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (min-width:768px){
+	.btn-menu{
+		display:none;
+	}
+	.menu{
+		display:inline-block;
+		position:initial;
+		text-align:center;	
+		background:#33CCFF;
+
+	}
+	.menu ul{
+		padding-top:0;
+		margin-top:0;
+		padding-bottom:10px;
+	}
+	.menu ul li{
+		display:inline-block;
+		font-size:16px;
+	}
+	.menu li a{
+		border:1px solid #33CCFF;
+		border-radius:5px;
+	}
+	.menu li a:hover{
+		background:white;
+		border-radius:5px;
+		border:1px solid #33CCFF;
+		color:#33CCFF;
+	}
+	.btn-close{
+		display:none;
+	}
+
+	.imagens-produto{
+		width:40%;
+		display:inline-block;
+	}
+	.btn-produtos{
+		display:block;
+		margin:20px auto;
+	}
+	#onde-encontrar iframe{
+		width:70%;
+		height:400px;
+	}
+	#onde-encontrar p{
+		text-align:center;
+	}
+
+}
+
+@media screen and (min-width:800px){
+	.btn-produtos{
+		display:block;
+		margin:30px auto;
+	}
+	.menu{
+		position:initial;
+		text-align:center;	
+		background:#33CCFF;
+		padding-top:5px;
+	}
+	.menu ul li{
+	}
+	
+}
+
+@media screen and (min-width:980px){
+	.menu ul li{
+		font-size:1em;
+	}
+	#contato input, textarea{
+		width:60%;
+		
+	}
+}
+@media screen and (min-width:1280px){
+	.titulo{
+		float:left;
+		margin-left:55px;
+		margin-top:10px;
+	}
+	.menu{
+		width:70%;
+		margin-top:130px;
+	}
+	.menu ul{
+		float:right;
+		margin-right:0;
+	}
+	.menu ul li{
+		padding-right:50px;
+	}
+	.line-colors{
+		clear:both;
+	}
+	.imagens-produto {
+		margin:10px;
+		padding:10px;
+		width:20%;
+	}
+	.btn-protutos{
+		clear:both;
+	}
+	.imagens-produto img{
+		width:250px;
+	}
+	#hsitoria{
+		height:10px;
+	}
+	#historia img{
+		float:left;
+		margin:20px;
+		padding-top:10px;
+	}
+	#historia article{
+		width:900px;
+		height:150px;
+		margin-right:50px;
+		padding:30px;
+		float:right;
+	}
+	.btn-historia{
+		clear:both;
+		margin-bottom:-15px;
+	}
+	footer{
+		clear:both;
+	}
+}
+@media screen and (min-width:1600px){
+	.titulo{
+		margin-left:200px;
+	}
+	#historia img{
+		margin-left:150px;
+	}
+	.btn-produtos{
+		display:block;
+		margin-left:700px;
+	}
+	#historia  article{
+		margin-right:150px;
+	}
+	.fundo-btn-historia{
+		height:100px;
+	}
+	.btn-historia{
+		margin-right:400px;
+		display:inline-block;
+	}
+	#onde-encontrar iframe{
+		width:700px;
+		margin-left:40px;
+	}
+	#onde-encontrar{
+		float:left;
+	}
+	#contato input, textarea{
+		width:40%;
+	}
+}
